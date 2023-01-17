@@ -23,9 +23,8 @@ A simple responsive wepage
 ### Smartphones
 
 <p align="center">
-  <img width="527" alt="small" src="https://user-images.githubusercontent.com/85778092/212826460-a7b7459a-6aa8-4475-b643-52b4ce707db5.png">
-  <br>
-  <img width="527" alt="small-further" src="https://user-images.githubusercontent.com/85778092/212826467-a0d8883e-f0d6-4d24-8fc4-54677d00d253.png">
+  <img width="400" alt="small" src="https://user-images.githubusercontent.com/85778092/212826460-a7b7459a-6aa8-4475-b643-52b4ce707db5.png">
+  <img width="400" alt="small-further" src="https://user-images.githubusercontent.com/85778092/212826467-a0d8883e-f0d6-4d24-8fc4-54677d00d253.png">
 </p>
 
 
