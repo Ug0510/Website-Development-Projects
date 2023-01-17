@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 215, 218);
+}
+nav{
+    height: 50px;
+    background-color: cadetblue;
+    width: 100%;
+    font-size: larger;
+    text-align: center;
+}
+nav ul li{
+    text-decoration:underline;
+    display: inline-block;
+    padding: 15px 20px;
+}
+.travelsection img{
+    width: 400px;
+    height: 300px;
+}
+.travelsection table,tr,td{
+    margin-left: auto;
+    margin-right: auto;
+}
+.travelsection{
+    text-align: center;
+}
+.travelsection h1{
+    margin: 40px 0px 25px;
+    font-size: 25px;
+}
+td a p{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+td{
+    /* box-shadow: 2px 2px 5px 3px rgb(148, 147, 147); */
+    margin: 30px;
+    background-color: white;
+    display: inline-block ;
+}
+td a{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.placepart h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.placepart img{
+    margin: 0px auto;
+    display: block;
+}
+.placepart p{
+    margin: 30px 70px 0px;
+    word-break: break-all;
+    background-color: aliceblue;
+    padding: 40px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.about h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.about p{
+    line-height: 1.5;
+    width: 70%;
+    margin: 0% auto;
+    font-size: 20px;
+}
+.form h2{
+    text-align: center;
+    margin: 30px 0px;
+}
+.form form{
+    border: 1px solid black;
+    display: block;
+    margin: 0% auto;
+    width: 500px;
+    height: 450px;
+    background-color:white;
+}
+.form input{
+    display: block;
+    margin: 60px auto 45px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid silver;
+    outline: none;
+}
+.form button{
+    display: block;
+    margin: 70px auto 20px;
+    width:100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(7, 27, 64);
+    font-size: 20px;
+    border:none;
+}
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
