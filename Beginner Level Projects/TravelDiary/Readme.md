@@ -2,7 +2,7 @@
 
 Basic Website that shows some image of places with their names
 #### Main components used are :-
-* Navbar
+* Navbar 
 * Table Layout
 * About Section
 * Contact us form
