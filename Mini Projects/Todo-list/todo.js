@@ -3,18 +3,15 @@ const taskList = document.getElementById('list');
 const addTaskInput = document.getElementById('add');
 const tasksCounter = document.getElementById('tasks-counter');
 
-console.log('Working');
 
 function addTaskToDOM(task){
 
     const li = document.createElement('li');
 
     li.innerHTML = `
-        <li>
-          <input type="checkbox" id="${task.id}" ${task.done? '' : 'checked'} class="custom-checkbox">
+          <input type="checkbox" id="${task.id}" ${task.done? 'checked' : ''} class="custom-checkbox">
           <label for="${task.id}">${task.text}</label>
           <img src="./icons/bin.png" class="delete" data-id="${task.id}" />
-        </li>
     `;
     taskList.append(li);
 }
@@ -43,6 +40,7 @@ function markTaskAsComplete (taskId) {
         currentTask.done = !currentTask.done;
         renderList();
         showNotification('Task Toggle Successfull')
+        return;
     }
     showNotification('Unable to toggle the task')
 }
@@ -81,7 +79,6 @@ function showNotification(text) {
 function handleInputKeypress(e){
     if (e.key == 'Enter'){
         const text = e.target.value;
-        console.log('text',text);
 
         //if input field is empty when enter key is pressed
         if(!text)
@@ -93,7 +90,7 @@ function handleInputKeypress(e){
         const task = {
             text,
             id: Date.now().toString(),
-            done: 'false'
+            done: false
         };
         e.target.value = "";
         addTask(task);
@@ -102,4 +99,26 @@ function handleInputKeypress(e){
     }
 }
 
+function handleClickListener(event){
+    const target = event.target;
+
+    if(target.className == "delete")
+    {
+        const elemId = target.dataset.id;
+        deleteTask(elemId);
+    }
+    else if (target.className == "custom-checkbox")
+    {
+        const elemId = target.id;
+        markTaskAsComplete(elemId);
+    }
+}
+
+function initializeApp(){
+
 addTaskInput.addEventListener('keyup',handleInputKeypress);
+
+taskList.addEventListener('click',handleClickListener);
+}
+
+initializeApp();
