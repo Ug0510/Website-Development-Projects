@@ -5,20 +5,44 @@ const tasksCounter = document.getElementById('tasks-counter');
 
 console.log('Working');
 
-function renderList () {}
+function renderList () {
+
+    for (task of tasks){
+        
+        const listItem = ```<li>
+        <input type="checkbox" id="task{{$task.id}}" data-id="12" class="custom-checkbox">
+        <label for="task1">Buy groceries</label>
+        <img src="bin.svg" class="delete" data-id="12" />
+      </li>```;
+    }
+
+}
 
 function markTaskAsComplete (taskId) {}
 
-function deleteTask (taskId) {}
+function deleteTask (taskId) {
+
+    const newTasks = tasks.filter(function(task){
+        if (task.id != taskId)
+            return task;
+    })
+}
 
 function addTask (task) {
 
-    //adding task in the list;
+    if(task)
+    {
+        //adding task in the list;
     tasks.push(task);
 
     console.log(tasks);
     //rendering list to update the list of todo itms
     renderList();
+    showNotification('Task Added Successfully!');
+    return;
+    }
+
+    showNotification('Task con\'t be added successfully ');
 
 }
 
