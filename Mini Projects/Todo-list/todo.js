@@ -3,20 +3,32 @@ const taskList = document.getElementById('list');
 const addTaskInput = document.getElementById('add');
 const tasksCounter = document.getElementById('tasks-counter');
 
-function fetchTodos(){
+// function fetchTodos(){
 
-    fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
+//     fetch('https://jsonplaceholder.typicode.com/todos')
+//     .then(function(response){
+//         return response.json();
+//     })
+//     .then(function(data){
+//         tasks = data.slice(0,10);
+//         renderList();
+//     })
+//     .catch(error => console.log(error))
+// }
+
+//Fetch Todo function as Async 
+async function fetchTodos(){
+
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+        const data = await response.json();
         tasks = data.slice(0,10);
         renderList();
-    })
-    .catch(error => console.log(error))
+    }catch(error)
+    {
+        console.log(error);
+    }
 }
-
-
 
 
 function addTaskToDOM(task){
@@ -44,7 +56,7 @@ function renderList () {
 }
 
 
-function markTaskAsComplete (taskId) {
+function ToggleTask (taskId) {
     const task = tasks.filter(function(task){
         return Number(task.id) === Number(taskId);
     })
@@ -125,7 +137,7 @@ function handleClickListener(event){
     else if (target.className == "custom-checkbox")
     {
         const elemId = target.id;
-        markTaskAsComplete(elemId);
+        ToggleTask(elemId);
     }
 }
 
