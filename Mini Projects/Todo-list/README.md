@@ -19,3 +19,8 @@ A todo list app
 	- checkTodo
 	- renderTodosList
 	- showNotification
+
+### What Project will look like after completion
+
+https://github.com/Ug0510/Website-Development-Projects/assets/85778092/8702e3f1-10d1-4ad1-8444-06309fc26188
+
