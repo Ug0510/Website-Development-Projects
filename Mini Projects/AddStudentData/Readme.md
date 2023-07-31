@@ -1,12 +1,13 @@
 # Student Entry Portal
 
 ### made by using 
-#### HTML 
-#### CSS
-#### JavaScript
-#### JQuery
+* HTML
+* CSS
+* JAVASCRIPT
+* JQUERY
 
 ### Video Showcase
 
+<div style="display:block; margin:auto; text-align:center;">
 https://github.com/Ug0510/Website-Development-Projects/assets/85778092/6f75168e-e647-42ba-b889-7bc504d87eef
-
+</div>
