@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="form-container">
+                <h1>Add Student Data</h1>
+                <div class="form-flex">
+                    <div class="form-col">
+                        <label for="rollno">Roll No.</label>
+                        <label for="name">Name</label>
+                        <label for="marks">Marks</label>
+
+                    </div>
+                    <div class="form-col">
+                        <input type="number" id="rollno" required>
+                        <input type="text" id="name" required>
+                        <input type="number" id="marks" required>
+                    </div>
+                </div>
+                <input type="button" id="addBtn" value="Add Details">
+            </div>
+        </section>
+        <aside>
+            <ul class="student-list">
+
+            </ul>
+        </aside>
+    </main>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section{
+    width:60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    /* width:80%;
+    height:80%; */
+    text-align: center;
+    font-size:24px;
+}
+.form-container *{
+    margin: 2rem;
+}
+.form-container label{
+    font-size: 24px;
+}
+.form-container input{
+    font-size: 22px;
+}
+.form-flex{
+    display: flex;
+}
+.form-col{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#addBtn{
+    padding: 20px 70px;
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.4);
+    font-family: monospace;
+}
+aside{
+    width: 39vw;
+    height: 100vh;
+    border-left: 2px solid black;
+    padding: 0 10px;
+    position: fixed;
+    right: 0;
+    top:0;
+}
+
+/* Student List  */
+.student-list{
+    width: 100%;
+    overflow-y: scroll;
+}
+.student-list li{
+    height: 3rem;
+    list-style: none;
+    font-size: 20px;
+    margin:auto;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+.student-list li span{
+    padding: 2px 10px;
+    background-color: rgb(52, 183, 52);
+}
+.student-list li:nth-child(even){
+    background-color: lightgray;
+}
